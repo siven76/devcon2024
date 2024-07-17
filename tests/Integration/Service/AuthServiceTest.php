@@ -13,7 +13,7 @@ class AuthServiceTest extends TestCase
         $userService = new UserService();
         $authService = new AuthService($userService);
 
-        $result = $authService->login('john_doe', 'password123');
+        $result = $authService->login('john_doe', 'password12');
 
         $this->assertTrue($result);
     }
